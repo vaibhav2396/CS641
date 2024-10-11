@@ -1,6 +1,10 @@
 import React, { useState } from "react"
 
-const FunctionalComponent2 = (prop) =>{
+interface Prop{
+    default: string;
+}
+
+const FunctionalComponent2 = (prop: Prop) =>{
     const [text, setText] = useState(prop.default)
 
     function changeText(){

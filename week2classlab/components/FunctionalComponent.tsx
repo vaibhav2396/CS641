@@ -1,6 +1,10 @@
 import React, { useState } from "react"
 
-const FunctionalComponent = (prop) =>{
+interface Prop{
+    default: number;
+}
+
+const FunctionalComponent = (prop: Prop) =>{
     const [count, setCount] = useState(prop.default)
 
     function increase(){
