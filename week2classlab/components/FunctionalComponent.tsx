@@ -1,7 +1,9 @@
 import React, { useState } from "react"
+import { Button } from "react-native";
 
 interface Prop{
     default: number;
+    buttonTitle: string;
 }
 
 const FunctionalComponent = (prop: Prop) =>{
@@ -12,7 +14,7 @@ const FunctionalComponent = (prop: Prop) =>{
     }
     return <>
         Count: {count}
-        <button onClick={increase}>Increase Count</button>
+        <Button title={prop.buttonTitle} onPress={increase}/>
     </>
 }
 

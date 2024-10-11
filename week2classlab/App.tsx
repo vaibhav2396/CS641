@@ -10,8 +10,8 @@ export default function App() {
       <Text>Text 1</Text>
       <Text>Text 2</Text>
       <ActivityIndicator></ActivityIndicator>
-      <FunctionalComponent default={0}/>
-      <FunctionalComponent2 default={"Hello"} />
+      <FunctionalComponent default={0} buttonTitle='Increase Count'/>
+      <FunctionalComponent2 default={"Hello"} buttonTitle='Change Text' />
      </ScrollView>
   );
 }
