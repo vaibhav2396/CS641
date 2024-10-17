@@ -1,5 +1,6 @@
 import React, { useState } from "react"
-import { Button } from "react-native";
+import { View,Button } from "react-native";
+import customStyle from "../styles/custom";
 
 interface Prop{
     default: number;
@@ -12,10 +13,10 @@ const FunctionalComponent = (prop: Prop) =>{
     function increase(){
         setCount(oldCount => oldCount+1)
     }
-    return <>
+    return <View style={customStyle.container} >
         Count: {count}
         <Button title={prop.buttonTitle} onPress={increase}/>
-    </>
+    </View>
 }
 
 export default FunctionalComponent
