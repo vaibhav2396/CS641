@@ -16,7 +16,7 @@ const ModalExample = () => {
           setModalVisible(!modalVisible);
         }}>
         <View style={styles.centeredView}>
-            <ImageBackground source={image} resizeMode="cover" style={styles.image}>
+           <ImageBackground source={image} resizeMode="cover" style={styles.image}>
                 <View style={styles.modalView}>
                     <Text style={styles.modalText}>Hello World!</Text>
                     <Pressable
